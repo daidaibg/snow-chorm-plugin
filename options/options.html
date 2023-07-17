@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/root.css" />
+    <link rel="stylesheet" href="/static/icon/iconfont.css">
+    <link rel="stylesheet" href="./option.css" />
+    <link rel="stylesheet" href="/static/vendor/message.css">
+    <link rel="stylesheet" href="/static/css/button.css">
+    <title>设置</title>
+  </head>
+
+  <body class="snow">
+    <div class="ss-option ">
+      <h3>某乎页面配置</h3>
+      <p>会员文章转图片</p>
+      <div class="ss-zh-html2img">
+        <p>
+          修改下列参数中的某些值,其它属性可以查看
+          <a
+            href="http://html2canvas.hertzen.com/configuration"
+            target="_blank"
+          >
+            http://html2canvas.hertzen.com/configuration
+          </a>
+        </p>
+        <table class="ss-table">
+          <tr>
+            <th>标题</th>
+            <th>说明</th>
+          </tr>
+          <tr>
+            <td>scale</td>
+            <td>生成图片放大缩小倍数默认1.5</td>
+          </tr>
+        </table>
+        <textarea name="" id="zhHtml2Img" rows="6"></textarea>
+      </div>
+      <div> <button id="ss-zh-html2img_sub" class="snow-button mini"> 确认</button></div>
+    </div>
+    <script src="../static/vendor/message.js"></script>
+    <script src="./zhihu.js" type="module"></script>
+  </body>
+</html>

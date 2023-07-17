@@ -1,0 +1,101 @@
+.dd-plugin-tools {
+  width: 150px;
+  position: relative;
+ 
+}
+.dd-plugin-tools ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dd-plugin-tools ul li {
+  line-height: 1.8;
+}
+.dd-plugin-tools .dd-plugin-sub-toos-item {
+  text-indent: 12px;
+  cursor: pointer;
+}
+#snowPlugin {
+}
+.dd-plugin-tools .dd-plugin-sub-toos-item:hover {
+  color: var(--snow-brand-color);
+}
+.ss-loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  content: "加载中...";
+  text-align: center;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 999;
+  display: none;
+}
+.ss-loading-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ss-loading .circular {
+  display: inline;
+  height: 20px;
+  width: 20px;
+  animation: 2s linear 0s infinite normal none running loading-rotate;
+}
+.ss-loading .path {
+  stroke-dasharray: 90, 150;
+  stroke-dashoffset: 0;
+  stroke-width: 2;
+  stroke: var(--snow-brand-color);
+  stroke-linecap: round;
+  animation: 1.5s ease-in-out 0s infinite normal none running loading-dash;
+}
+@keyframes loading-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -40px;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -120px;
+  }
+}
+
+.ss-footer {
+  width: 100%;
+  font-size: 13px;
+  margin-top: 6px;
+  padding-top: 6px;
+  display: flex;
+  justify-content: space-around;
+  border-top: solid 1px #ebebeb;
+}
+
+.ss-setting{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #555353;
+}
+.ss-setting:hover{
+    color: var(--snow-brand-color); 
+}
+.snow-shezhi{
+    font-size: 11px;
+    margin-right: 2px;
+}

@@ -1,0 +1,42 @@
+.snow-button {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    font-size: 14px;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-radius: 4px;
+    transition: all .2s linear;
+    touch-action: manipulation;
+    line-height: 1;
+    /* -size-medium */
+    height: 32px;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    color: #FFF;
+    background-color: var(--snow-brand-color);
+    border-color: var(--snow-brand-color);
+}
+
+.snow-button.mini{
+    height: 24px;
+    font-size: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.snow-button:hover{
+    background-color: var(--snow-brand-color-7);
+    border-color: var(--snow-brand-color-7);
+}

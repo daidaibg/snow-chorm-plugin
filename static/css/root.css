@@ -1,0 +1,24 @@
+
+.snow{
+    --snow-brand-color-1: #ecf2fe;
+    --snow-brand-color-2: #d4e3fc;
+    --snow-brand-color-3: #bbd3fb;
+    --snow-brand-color-4: #96bbf8;
+    --snow-brand-color-5: #699ef5;
+    --snow-brand-color-6: #4787f0;
+    --snow-brand-color-7: #266fe8;
+    --snow-brand-color: #0052d9;
+    --snow-brand-color-9: #0034b5;
+    --snow-brand-color-10: #001f97;
+
+    --snow-shadow-3: 0 6px 30px 5px rgba(0, 0, 0, .05), 0 16px 24px 2px rgba(0, 0, 0, 4%), 0 8px 10px -5px rgba(0, 0, 0, 8%);
+    --snow-shadow-inset-top: inset 0 -.5px 0 #dcdcdc;
+    --snow-shadow-inset-right: inset -.5px 0 0 #dcdcdc;
+    --snow-shadow-inset-bottom: inset 0 -.5px 0 #dcdcdc;
+    --snow-shadow-inset-left: inset -.5px 0 0 #dcdcdc;
+}
+
+.snow *{
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,33 @@
+.ss-option {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100%;
+}
+.ss-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.ss-table th,
+.ss-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.ss-table th {
+  background-color: #f2f2f2;
+}
+
+
+#zhHtml2Img{
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    margin-top: 16px;
+    padding: 8px;
+    border: solid 1px #cccbcb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#zhHtml2Img:focus{
+    border-color: var(--snow-brand-color);
+}

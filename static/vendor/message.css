@@ -1,0 +1,71 @@
+.snow-message {
+  background-color: #fff;
+  box-shadow: var(--snow-shadow-3), var(--snow-shadow-inset-top),
+    var(--snow-shadow-inset-right), var(--snow-shadow-inset-bottom),
+    var(--snow-shadow-inset-left);
+  border: none;
+  color: rgba(0, 0, 0, 0.9);
+
+  width: fit-content;
+  max-width: calc(100% - 32px);
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: fixed;
+  outline: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s, transform 0.4s, top 0.4s;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+
+  /* animation: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.4s;
+  transition: all .4s; */
+}
+.snow-message__icon {
+  font-size: 20px;
+  margin-right: 10px;
+  line-height: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.snow-message__content {
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.snow-message--info .snow-message__icon {
+  color: var(--snow-brand-color);
+}
+
+.snow-message--success .snow-message__icon {
+  color: #00a870;
+}
+
+.snow-message--warning .snow-message__icon {
+  color: #ed7b2f;
+}
+
+.snow-message--error .snow-message__icon {
+  color: #e34d59;
+}
+
+.snow-message.is-closable .snow-message__closeBtn {
+  margin-left: 16px;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  border-radius: 2px;
+  color: #a8abb2;
+}
+.snow-message__closeBtn:hover {
+  background-color: #f3f3f3;
+}
